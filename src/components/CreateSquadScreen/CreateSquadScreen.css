@@ -1,0 +1,256 @@
+.csq-header {
+  flex-shrink: 0;
+  background: var(--maroon);
+  border-bottom: 1px solid var(--border);
+}
+
+.csq-header__content {
+  height: 66px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.csq-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Google Sans Flex', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--orange-200);
+}
+
+.csq-title {
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--orange-200);
+}
+
+/* Body — the page itself never scrolls; only .csq-members__list does */
+
+.csq-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px 16px;
+  box-sizing: border-box;
+}
+
+.csq-avatar-section {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.csq-avatar-large-wrap {
+  position: relative;
+}
+
+.csq-avatar-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background: #d4acac;
+  border: 2px solid #d4acac;
+  font-size: 32px;
+  color: var(--maroon);
+}
+
+.csq-avatar-edit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background: #d4acac;
+  border: 2px solid #490919;
+}
+
+.csq-avatar-hint {
+  font-size: 16px;
+  color: var(--maroon);
+}
+
+.csq-field {
+  flex-shrink: 0;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.csq-field__label {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--maroon);
+}
+
+.csq-field__input {
+  height: 56px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.csq-field__input:focus {
+  outline: none;
+  border-color: var(--maroon);
+}
+
+.csq-members {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.csq-members__label {
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--maroon);
+}
+
+.csq-members__list {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  background: var(--orange-100);
+  border: 1px solid var(--orange-100);
+  border-radius: 12px;
+}
+
+.csq-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.csq-row:last-child {
+  border-bottom: none;
+}
+
+.csq-row__info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.csq-avatar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  background: var(--maroon);
+  color: var(--orange-100);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.csq-row__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray-900);
+}
+
+.csq-checkbox {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1.5px solid var(--maroon);
+  background: #fff;
+}
+
+.csq-checkbox--checked {
+  background: #fff;
+  border-color: var(--maroon);
+}
+
+.csq-share-btn {
+  flex-shrink: 0;
+  margin-top: 16px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  background: var(--orange-100);
+  color: var(--maroon);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.csq-create-btn {
+  flex-shrink: 0;
+  margin-top: 12px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background: var(--maroon);
+  color: var(--orange-200);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.csq-create-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

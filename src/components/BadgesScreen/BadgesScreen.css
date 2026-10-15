@@ -1,0 +1,135 @@
+.bd-header {
+  flex-shrink: 0;
+  background: var(--maroon);
+  border-bottom: 1px solid var(--border);
+}
+
+.bd-header__content {
+  height: 66px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.bd-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Google Sans Flex', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--orange-200);
+}
+
+.bd-title {
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 34px;
+  color: var(--orange-200);
+}
+
+.bd-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 14px 16px 20px;
+  box-sizing: border-box;
+}
+
+.bd-hint {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--maroon);
+}
+
+.bd-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bd-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px;
+  box-sizing: border-box;
+  background: var(--orange-100);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.bd-card__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.bd-card__text {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 2px;
+}
+
+.bd-card__name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--gray-900);
+}
+
+.bd-card__desc {
+  font-size: 12px;
+  color: var(--gray-500);
+}
+
+.bd-card__right {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 44px;
+}
+
+.bd-card__perk {
+  padding: 2px 8px;
+  border-radius: 16px;
+  background: rgba(128, 0, 32, 0.05);
+  color: var(--maroon);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.bd-star-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.bd-star-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}

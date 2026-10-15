@@ -1,0 +1,20 @@
+/* Onboarding completion screen */
+.oss { background: var(--maroon); color: var(--orange-200); overflow: hidden; }
+.oss-header { flex-shrink: 0; background: var(--maroon); }
+.oss-content { flex: 1 1 auto; display: flex; flex-direction: column; align-items: center; padding-top: 80px; box-sizing: border-box; text-align: center; }
+.oss-brand { text-align: center; }
+.oss-title { margin: 0; font-family: 'DM Serif Text', serif; font-size: 48px; font-weight: 400; line-height: 56px; color: var(--orange-200); }
+.oss-subtitle { margin: 0; font-size: 14px; font-weight: 500; line-height: 20px; color: var(--orange-200); }
+.oss-message { margin-top: 65px; text-align: center; }
+.oss-check { width: 66px; height: 66px; margin: 0 auto; border: 2px solid var(--orange-200); border-radius: 50%; box-sizing: border-box; display: grid; place-items: center; animation: oss-pop .55s cubic-bezier(.2, .8, .25, 1) both; }
+.oss-check svg { width: 32px; height: 32px; overflow: visible; }
+.oss-check path { fill: none; stroke: var(--orange-200); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 25; stroke-dashoffset: 25; animation: oss-draw .4s .42s ease-out forwards; }
+.oss-message h2 { margin: 23px 0 5px; color: var(--orange-200); font-family: 'DM Serif Text', serif; font-size: 24px; font-weight: 400; line-height: 32px; }
+.oss-message p { margin: 0; color: var(--orange-200); font-size: 14px; font-weight: 400; line-height: 18px; }
+.oss-explore { flex-shrink: 0; width: 303px; height: 43px; margin: 0 auto 29px; border: 0; border-radius: 10px; background: var(--orange-200); color: var(--maroon); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.oss-explore:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+.oss-home-indicator { flex-shrink: 0; height: 24px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; box-sizing: border-box; background: var(--maroon); }
+.oss-home-indicator__bar { width: 134px; height: 5px; border-radius: 100px; background: #fff; }
+@keyframes oss-pop { from { opacity: 0; transform: scale(.55); } to { opacity: 1; transform: scale(1); } }
+@keyframes oss-draw { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .oss-check, .oss-check path { animation: none; stroke-dashoffset: 0; } }

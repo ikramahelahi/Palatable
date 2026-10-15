@@ -1,0 +1,102 @@
+.ds-card {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 79px;
+  padding: 12px;
+  box-sizing: border-box;
+  background: var(--orange-100);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.ds-card__thumb {
+  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ds-card__thumb-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ds-card__text {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ds-card__name {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--maroon);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ds-card__match {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--maroon);
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.ds-card__match-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.ds-card__actions {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.ds-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.ds-icon-btn--static {
+  cursor: default;
+  background: var(--maroon);
+  border-radius: 14px;
+}
+
+.ds-icon-btn__img {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.ds-icon-btn--static .ds-icon-btn__img {
+  width: 18px;
+  height: 18px;
+}

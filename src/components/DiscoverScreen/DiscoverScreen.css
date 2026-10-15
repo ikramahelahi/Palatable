@@ -1,0 +1,117 @@
+/* Header */
+
+.ds-header {
+  flex-shrink: 0;
+  background: var(--maroon);
+}
+
+.ds-header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 24px 16px;
+  box-sizing: border-box;
+}
+.ds-title {
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 28px;
+  color: var(--orange-200);
+}
+
+/* Search */
+
+.ds-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  background: #f0d8d9;
+  border-radius: 25px;
+}
+
+.ds-search__icon {
+  flex-shrink: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.ds-search__input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--maroon);
+}
+
+.ds-search__input::placeholder {
+  color: var(--maroon);
+  opacity: 0.7;
+}
+
+.ds-search__input:focus {
+  outline: none;
+}
+
+/* Filters */
+
+.ds-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ds-filter {
+  height: 28px;
+  padding: 2px 12px;
+  border: none;
+  border-radius: 20px;
+  background: #f0d8d9;
+  color: var(--maroon);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.ds-filter--active {
+  background: var(--orange-200);
+  color: var(--maroon);
+  box-shadow: inset 0 0 0 1.5px var(--maroon);
+}
+
+/* Section title */
+
+.ds-section-title {
+  flex-shrink: 0;
+  padding: 16px 19px 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--maroon);
+}
+
+/* Cards list */
+
+.ds-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 19px 20px;
+  box-sizing: border-box;
+}

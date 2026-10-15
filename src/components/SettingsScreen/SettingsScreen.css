@@ -1,0 +1,159 @@
+.st-header {
+  flex-shrink: 0;
+  background: var(--maroon);
+}
+
+.st-header__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 20px 24px;
+  box-sizing: border-box;
+}
+
+.st-back {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Google Sans Flex', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--orange-200);
+}
+
+.st-avatar-wrap {
+  position: relative;
+  margin-top: 20px;
+}
+
+.st-avatar-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background: #d4acac;
+  border: 2px solid #d4acac;
+  font-size: 32px;
+  color: var(--maroon);
+}
+
+.st-avatar-edit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background: #d4acac;
+  border: 2px solid #490919;
+}
+
+.st-meta {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.st-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.st-title {
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--orange-200);
+}
+
+.st-edit-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.st-email {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--orange-200);
+  opacity: 0.8;
+}
+
+.st-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 20px 16px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.st-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.st-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.st-field__label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--maroon);
+}
+
+.st-field__input {
+  height: 48px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.st-field__input:focus {
+  outline: none;
+  border-color: var(--maroon);
+}
+
+.st-save-btn {
+  flex-shrink: 0;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background: var(--maroon);
+  color: var(--orange-200);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+/* Final onboarding vibe screen */
+.vs { background: var(--maroon); overflow: hidden; }
+.vs-header { flex-shrink: 0; background: var(--maroon); }
+.vs-content { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; align-items: center; padding: 22px 7px 0; box-sizing: border-box; background: var(--maroon); }
+.vs-title-section { text-align: center; margin-bottom: 20px; }
+.vs-title { margin: 0; color: var(--orange-200); font-family: 'DM Serif Text', serif; font-size: 48px; font-weight: 400; line-height: 56px; }
+.vs-subtitle { margin: 0; color: var(--orange-200); font-size: 14px; font-weight: 500; line-height: 20px; }
+.vs-sheet { width: 361px; min-height: 427px; padding: 25px 18px 24px; box-sizing: border-box; border-radius: 24px; background: var(--orange-100); display: flex; flex-direction: column; }
+.vs-progress { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; }
+.vs-progress span { height: 4px; border-radius: 100px; background: var(--maroon); }
+.vs-heading { margin: 22px 0 0; color: var(--maroon); font-family: 'DM Serif Text', serif; font-size: 16px; font-weight: 400; line-height: 20px; }
+.vs-options { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+.vs-option { height: 64px; padding: 0 16px; border: 1px solid var(--maroon); border-radius: 10px; background: transparent; color: var(--maroon); font: inherit; font-size: 14px; font-weight: 600; line-height: 20px; cursor: pointer; }
+.vs-option--selected { background: var(--maroon); color: var(--orange-100); }
+.vs-option:focus-visible, .vs-back:focus-visible, .vs-finish:focus-visible { outline: 2px solid var(--maroon); outline-offset: 2px; }
+.vs-actions { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 24px; }
+.vs-back { width: 78px; height: 42px; border: 0; border-radius: 10px; background: transparent; color: var(--maroon); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.vs-finish { width: 105px; height: 42px; border: 0; border-radius: 10px; background: var(--maroon); color: var(--orange-100); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.vs-finish:disabled { background: #d0a7ac; cursor: not-allowed; }
+.vs-home-indicator { flex-shrink: 0; margin-top: auto; height: 24px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; box-sizing: border-box; background: var(--maroon); }
+.vs-home-indicator__bar { width: 134px; height: 5px; border-radius: 100px; background: #fff; }

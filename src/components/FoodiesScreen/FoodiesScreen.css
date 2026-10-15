@@ -1,0 +1,172 @@
+.fd-header {
+  flex-shrink: 0;
+  background: var(--maroon);
+  border-bottom: 1px solid var(--border);
+}
+
+.fd-header__content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 24px 24px 20px;
+  box-sizing: border-box;
+}
+
+.fd-title {
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 28px;
+  color: var(--orange-200);
+}
+
+/* Individual Friends composer */
+
+.fd-friends {
+  flex-shrink: 0;
+  height: 56px;
+  background: var(--orange-100);
+  border-bottom: 1px solid var(--border);
+  box-sizing: border-box;
+}
+
+.fd-friends__scroll {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 15px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.fd-friends__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.fd-friend {
+  position: relative;
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 200px;
+  background: var(--maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fd-friend__initials {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--orange-200);
+}
+
+.fd-friend__status {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--success-500);
+  border: 1.5px solid #fff;
+}
+
+.fd-friends__more {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Squad cards */
+
+.fd-squads {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.fd-squads__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.fd-squad-card {
+  height: 158px;
+  border-radius: 10px;
+  background: var(--orange-100);
+  border: none;
+  padding: 14px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.fd-squad-card__name {
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--maroon);
+}
+
+.fd-squad-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--maroon);
+  opacity: 0.75;
+}
+
+.fd-squad-card__avatars {
+  display: flex;
+}
+
+.fd-squad-card__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 200px;
+  background: var(--maroon);
+  color: var(--orange-200);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.fd-squads__add {
+  height: 158px;
+  border-radius: 12px;
+  background: var(--gray-100);
+  border: 1px dashed var(--neutral-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fd-squads__add-icon {
+  font-size: 20px;
+  line-height: 1;
+  color: var(--neutral-600);
+}

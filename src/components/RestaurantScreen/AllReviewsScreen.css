@@ -1,0 +1,153 @@
+.ars-section-title {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px 0;
+}
+
+.ars-section-title__label {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--maroon);
+}
+
+.ars-section-title__count {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--maroon);
+  opacity: 0.6;
+}
+
+.ars-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Review post */
+
+.ars-post {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ars-post--clickable {
+  cursor: pointer;
+}
+
+.ars-post--clickable:focus-visible {
+  outline: 2px solid var(--maroon);
+  outline-offset: -2px;
+}
+
+.ars-post:last-child {
+  border-bottom: none;
+}
+
+.ars-post__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ars-avatar {
+  position: relative;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 200px;
+  background: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ars-avatar__initials {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-600);
+}
+
+.ars-avatar__status {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--success-500);
+  border: 1.5px solid #fff;
+  box-sizing: border-box;
+}
+
+.ars-post__byline {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ars-post__author {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-700);
+}
+
+.ars-post__timestamp {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gray-500);
+}
+
+.ars-post__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-900);
+}
+
+.ars-post__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ars-post__stats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ars-stat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ars-stat--like {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ars-stat__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.ars-stat__label--neutral {
+  color: var(--neutral-600);
+}

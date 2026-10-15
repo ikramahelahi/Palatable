@@ -1,0 +1,286 @@
+/* Header */
+
+.rp-header {
+  flex-shrink: 0;
+  background: var(--maroon);
+}
+
+.rp-header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 12px 20px 20px;
+  box-sizing: border-box;
+}
+
+.rp-top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rp-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Google Sans Flex', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--orange-200);
+}
+
+.rp-save {
+  padding: 4px;
+}
+
+.rp-save__icon {
+  display: block;
+  width: 14px;
+  height: 20px;
+}
+
+/* Identity */
+
+.rp-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.rp-logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background: var(--orange-100);
+}
+
+.rp-logo__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rp-name {
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  line-height: normal;
+  color: var(--orange-200);
+  text-align: center;
+}
+
+.rp-tagline {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: var(--orange-200);
+  opacity: 0.8;
+  text-align: center;
+}
+
+.rp-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.rp-meta__match {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--orange-200);
+}
+
+.rp-meta__icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.rp-meta__location {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--orange-200);
+  opacity: 0.7;
+}
+
+/* Actions */
+
+.rp-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rp-action-btn {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 22px;
+  background: var(--orange-200);
+  color: var(--maroon);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.rp-action-btn--maps {
+  flex: 0 0 162px;
+}
+
+/* Body */
+
+.rp-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 12px 20px 40px;
+  box-sizing: border-box;
+}
+
+.rp-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rp-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rp-section__header--button {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.rp-section__title {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--maroon);
+}
+
+.rp-section__count {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--maroon);
+  opacity: 0.6;
+}
+
+/* Photos */
+
+.rp-photos {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.rp-photo {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.rp-photo__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Reviews */
+
+.rp-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rp-review {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: var(--orange-100);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.rp-review__user-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rp-review__avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: var(--maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--orange-200);
+}
+
+.rp-review__details {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rp-review__name {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--maroon);
+}
+
+.rp-review__time {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--maroon);
+  opacity: 0.6;
+}
+
+.rp-review__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--maroon);
+}

@@ -1,0 +1,146 @@
+/* Header */
+
+.fr-header {
+  flex-shrink: 0;
+  background: var(--maroon);
+  border-bottom: 1px solid var(--border);
+}
+
+.fr-header__content {
+  height: 66px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.fr-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Google Sans Flex', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--orange-200);
+}
+
+.fr-title {
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--orange-200);
+}
+
+/* Body */
+
+.fr-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.fr-list {
+  display: flex;
+  flex-direction: column;
+  background: var(--orange-100);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.fr-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.fr-row:last-child {
+  border-bottom: none;
+}
+
+.fr-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.fr-avatar {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  background: var(--maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fr-avatar__initials {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: normal;
+  color: var(--orange-100);
+}
+
+.fr-user__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.fr-name {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: normal;
+  color: var(--gray-900);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fr-timestamp {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gray-500);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fr-accept {
+  flex-shrink: 0;
+  height: 32px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 999px;
+  background: var(--maroon);
+  color: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.fr-empty {
+  padding: 24px 16px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gray-500);
+}

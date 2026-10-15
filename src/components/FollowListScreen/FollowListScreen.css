@@ -1,0 +1,122 @@
+.fl-header {
+  flex-shrink: 0;
+  background: var(--maroon);
+  border-bottom: 1px solid var(--border);
+}
+
+.fl-header__content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px 20px;
+  box-sizing: border-box;
+}
+
+.fl-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Google Sans Flex', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--orange-200);
+}
+
+.fl-title {
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 28px;
+  color: var(--orange-200);
+}
+
+.fl-panel-content {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 8px 16px 16px;
+}
+
+.fl-list {
+  background: var(--orange-100);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.fl-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.fl-row:last-child {
+  border-bottom: none;
+}
+
+.fl-row__info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.fl-avatar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  background: var(--maroon);
+  color: var(--orange-100);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fl-row__name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray-900);
+}
+
+.fl-follow-btn {
+  flex-shrink: 0;
+  height: 32px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 999px;
+  background: var(--maroon);
+  color: #fff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fl-remove-btn {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 14px;
+  background: #fee2e2;
+  cursor: pointer;
+}

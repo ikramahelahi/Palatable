@@ -1,0 +1,58 @@
+import messageSquareIcon from '../assets/home-feed/icons/message-square.svg'
+import postDesignSprint from '../components/RestaurantScreen/images/photo-1.png'
+import postWeekend from '../components/RestaurantScreen/images/photo-4.png'
+import postDesignSystem from '../components/RestaurantScreen/images/photo-5.png'
+
+export const POSTS = [
+  {
+    id: 'post-1',
+    author: 'Olivia Rhye',
+    avatarInitials: 'OR',
+    timestamp: '2 hours ago',
+    text: "The grilled seafood platter at Xander's was the perfect way to catch up with friends. Fresh flavours, great service, and a lively atmosphere.",
+    image: postDesignSprint,
+    imageAlt: "A restaurant meal at Xander's",
+    likeCount: '1.2k',
+    likeTone: 'neutral',
+    secondaryStats: [{ icon: messageSquareIcon, label: '45', tone: 'neutral', type: 'comment' }],
+    restaurantName: "Xander's",
+    handle: '@oliviarhye',
+    companionTag: 'Went with Friends',
+    cuisineTag: 'Fusion Cuisine',
+    ratings: { foodQuality: 'happy', valueForMoney: 'smile', ambience: 'happy', safety: 'smile', hygiene: 'smile' },
+  },
+  {
+    id: 'post-2',
+    author: 'Phoenix Baker',
+    avatarInitials: 'OR',
+    timestamp: '5 hours ago',
+    text: 'A cozy dinner at Olive Tree Bistro made for the loveliest date night. The pasta and warm lighting were both standouts.',
+    image: postWeekend,
+    imageAlt: 'A cozy restaurant dinner experience',
+    likeCount: '856',
+    likeTone: 'neutral',
+    secondaryStats: [{ icon: messageSquareIcon, label: '23', tone: 'neutral', type: 'comment' }],
+    restaurantName: 'Olive Tree Bistro',
+    handle: '@phoenixbaker',
+    companionTag: 'Went with Partner',
+    cuisineTag: 'Mediterranean Cuisine',
+    ratings: { foodQuality: 'happy', valueForMoney: 'meh', ambience: 'happy', safety: 'smile', hygiene: 'happy' },
+  },
+  {
+    id: 'post-3',
+    author: 'Ayesha Malik',
+    avatarInitials: 'OR',
+    timestamp: '1 day ago',
+    text: 'Stopped by Croissant Guy for coffee and a fresh almond croissant. Such a simple, comforting weekend treat.',
+    image: postDesignSystem,
+    imageAlt: 'Coffee and pastries at a bakery',
+    likeCount: '3.4k',
+    likeTone: 'neutral',
+    secondaryStats: [{ icon: messageSquareIcon, label: '112', tone: 'neutral', type: 'comment' }],
+    restaurantName: 'Croissant Guy',
+    handle: '@ayeshamalik',
+    companionTag: 'Went with Friends',
+    cuisineTag: 'Bakery Cuisine',
+    ratings: { foodQuality: 'smile', valueForMoney: 'smile', ambience: 'meh', safety: 'smile', hygiene: 'happy' },
+  },
+]

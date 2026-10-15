@@ -1,0 +1,104 @@
+.ac-card {
+  background: #951d3b;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.ac-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.ac-track::-webkit-scrollbar {
+  display: none;
+}
+
+.ac-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  padding: 16px 20px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-height: 140px;
+  justify-content: center;
+}
+
+
+.ac-metric {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ac-metric__icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  align-self: center;
+}
+
+.ac-metric__value {
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--orange-200);
+}
+
+.ac-metric__value--text {
+  font-size: 19px;
+}
+
+.ac-metric__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--orange-200);
+  opacity: 0.8;
+}
+
+.ac-metric__delta {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--orange-200);
+  opacity: 0.85;
+}
+
+.ac-progress-track {
+  height: 6px;
+  border-radius: 999px;
+  background: #7a1f3a;
+  overflow: hidden;
+}
+
+.ac-progress-fill {
+  height: 100%;
+  background: var(--orange-200);
+}
+
+.ac-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 2px 0 12px;
+}
+
+.ac-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  background: #7a1f3a;
+  cursor: pointer;
+}
+
+.ac-dot--active {
+  background: var(--orange-200);
+}

@@ -1,0 +1,38 @@
+/* Location onboarding screen */
+
+.lps { background: var(--maroon); overflow: hidden; }
+.lps-header { flex-shrink: 0; background: var(--maroon); }
+.lps-content {
+  flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; align-items: center;
+  padding: 36px 10px 0; box-sizing: border-box; background: var(--maroon);
+}
+.lps-title-section { text-align: center; margin-bottom: 20px; }
+.lps-title {
+  margin: 0 0 12px; color: var(--orange-200); font-family: 'DM Serif Text', serif;
+  font-size: 48px; font-weight: 400; line-height: 56px;
+}
+.lps-subtitle { margin: 0; color: var(--orange-200); font-size: 14px; font-weight: 500; line-height: 20px; }
+.lps-sheet {
+  width: 355px; min-height: 340px; padding: 24px 20px 36px; border-radius: 24px;
+  box-sizing: border-box; background: var(--orange-100); display: flex; flex-direction: column;
+}
+.lps-intro { text-align: center; }
+.lps-heading { margin: 0 0 4px; color: var(--maroon); font-family: 'DM Serif Text', serif; font-size: 18px; font-weight: 400; line-height: 24px; }
+.lps-description { margin: 0; color: var(--gray-600); font-size: 12px; font-weight: 400; line-height: 16px; }
+.lps-location-section { margin-top: 16px; }
+.lps-question { margin: 0 0 2px; color: var(--maroon); font-size: 14px; font-weight: 600; line-height: 20px; }
+.lps-helper { margin: 0; color: var(--gray-500); font-size: 12px; line-height: 16px; }
+.lps-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 10px; margin-top: 16px; }
+.lps-option {
+  height: 38px; border: 1px solid var(--maroon); border-radius: 100px; background: transparent;
+  color: var(--maroon); font: inherit; font-size: 12px; font-weight: 600; line-height: 16px; cursor: pointer;
+}
+.lps-option--selected { background: var(--maroon); color: var(--orange-100); }
+.lps-option:focus-visible, .lps-start-button:focus-visible { outline: 2px solid var(--maroon); outline-offset: 2px; }
+.lps-start-button {
+  height: 48px; margin-top: 16px; border: 0; border-radius: 10px; background: var(--maroon);
+  color: var(--orange-100); font: inherit; font-size: 14px; font-weight: 600; line-height: 20px; cursor: pointer;
+}
+.lps-start-button:disabled { background: #d0a7ac; color: #f8ebd8; cursor: not-allowed; }
+.lps-home-indicator { flex-shrink: 0; margin-top: auto; height: 24px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; box-sizing: border-box; background: var(--maroon); }
+.lps-home-indicator__bar { width: 134px; height: 5px; border-radius: 100px; background: #fff; }

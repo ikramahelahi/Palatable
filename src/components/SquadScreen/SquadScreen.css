@@ -1,0 +1,156 @@
+.sq-header {
+  position: relative;
+  flex-shrink: 0;
+  background: var(--maroon);
+  border-bottom: 1px solid var(--border);
+}
+
+.sq-header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px 20px 20px;
+  box-sizing: border-box;
+}
+
+.sq-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sq-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-right: 2px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Google Sans Flex', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--orange-200);
+}
+
+.sq-avatar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 200px;
+  background: #d4acac;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--maroon);
+}
+
+.sq-title {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--orange-200);
+}
+
+.sq-settings-btn {
+  flex-shrink: 0;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+}
+
+/* Suggested / Squad Bucketlist panel content (toggle + sliding shell come from shared FilterTabs) */
+
+.sq-panel-content {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 19px 20px;
+}
+
+.sq-filter-bar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 2px 0 4px;
+}
+
+.sq-filter-bar__line {
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--maroon);
+  opacity: 0.85;
+}
+
+.sq-sort {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--maroon);
+  border-radius: 8px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--maroon);
+  cursor: default;
+}
+/* Keep the squad analytics card visually identical to the profile analytics card. */
+.sq .ac-card {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  text-align: left;
+}
+
+.sq-analytics-callout { position: relative; }
+
+.sq-analytics-callout__bubble {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: -32px;
+  transform: translateX(-50%);
+  padding: 7px 13px;
+  border-radius: 10px;
+  background: #58162a;
+  color: var(--orange-200);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+}
+
+.sq-analytics-callout__bubble::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #58162a;
+  transform: translateX(-50%) rotate(45deg);
+}

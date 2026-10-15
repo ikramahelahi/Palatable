@@ -1,0 +1,136 @@
+.pf-sidebar-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 70;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.32s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.pf-sidebar-overlay--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.pf-sidebar-drawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 236px;
+  box-sizing: border-box;
+  padding: 24px 15px;
+  background: var(--maroon);
+  border-radius: 20px 0 0 20px;
+  transform: translateX(100%);
+  transition: transform 0.32s cubic-bezier(0.32, 0.72, 0, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-sidebar-overlay--open .pf-sidebar-drawer {
+  transform: translateX(0);
+}
+
+.pf-sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pf-sidebar-avatar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 200px;
+  background: var(--orange-200);
+  color: var(--maroon);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pf-sidebar-user__text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pf-sidebar-user__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--orange-200);
+}
+
+.pf-sidebar-user__handle {
+  font-size: 13px;
+  color: rgba(248, 235, 216, 0.6);
+}
+
+.pf-sidebar-divider {
+  height: 1px;
+  margin: 20px 0;
+  background: rgba(242, 216, 176, 0.2);
+}
+
+.pf-sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pf-sidebar-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 40px;
+  padding: 12px 8px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid rgba(242, 216, 176, 0.2);
+  background: none;
+  color: var(--orange-200);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+}
+
+.pf-sidebar-row:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.pf-sidebar-row--no-border {
+  border-bottom: none;
+}
+
+.pf-sidebar-logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 44px;
+  margin-top: auto;
+  padding: 0 16px;
+  border: none;
+  border-radius: 10px;
+  background: var(--orange-200);
+  color: var(--maroon);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pf-sidebar-logout:hover { opacity: 0.92; }
+.pf-sidebar-logout:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }

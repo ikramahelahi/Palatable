@@ -1,0 +1,61 @@
+.cfd-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background: rgba(16, 24, 40, 0.5);
+}
+
+.cfd-card {
+  width: 100%;
+  max-width: 280px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(16, 24, 40, 0.3);
+}
+
+.cfd-message {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--gray-900);
+  text-align: center;
+}
+
+.cfd-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.cfd-btn {
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid var(--maroon);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cfd-btn--confirm {
+  background: var(--maroon);
+  color: #fff;
+}
+
+.cfd-btn--confirm.cfd-btn--destructive {
+  background: #991b1b;
+  border-color: #991b1b;
+}
+
+.cfd-btn--cancel {
+  background: #fff;
+  color: var(--maroon);
+}
